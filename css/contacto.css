@@ -1,0 +1,122 @@
+
+#contacto {
+    background-color: #f9f9f9; 
+    padding: 30px;
+    border-radius: 10px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#contacto h2 {
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    color: #222; 
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+label {
+    font-weight: bold; 
+    font-size: 1rem; 
+    color: #555; 
+}
+
+input, textarea {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none; 
+}
+
+button {
+    background-color: #726f6f;
+    color: aliceblue;
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 10px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+}
+
+button:hover {
+    background-color: #2F2F2F; 
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1200px) {
+    
+    .contacto{
+        height: 30vh;
+        width: 100vw;
+
+    }
+
+
+
+}
+
+
+
+@media (max-width: 767px) {
+    #contacto {
+        padding: 20px; 
+    }
+
+    #contacto h2 {
+        font-size: 1.5rem; 
+    }
+
+    form {
+        gap: 10px; 
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    input, textarea {
+        font-size: 0.95rem; 
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9rem; 
+        padding: 8px 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #contacto {
+        padding: 15px; 
+    }
+
+    #contacto h2 {
+        font-size: 1.2rem; 
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+        padding: 6px; 
+    }
+
+    button {
+        font-size: 0.85rem; 
+        padding: 6px 10px; 
+    }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/barra_nav.css">
+    <link rel="stylesheet" href="./css/carrusel.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/reseñas.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+
+</head>
+<body>
+
+    <nav>
+        <!-- logo -->
+        <div class="logo-barra">
+            <img class="logo-camisa" src="./img/icom/icons-camiseta.png" alt="">
+            <p>T-Shirt</p>
+        </div>
+
+        <!-- menu desplegable-->
+        <ul class="menu-horizontal">
+            <li>
+            <a href="">inicio</a>
+            </li>
+
+            <li>
+            <a href="">Remeras</a>
+            <ul class="menu-vertical">
+                <li><a href="">Musculosa</a></li>
+                <li><a href="">Diseños</a></li>
+                <li><a href="">Basica</a></li>
+            </ul>
+            </li>
+            <li><a href="">registrarse</a></li>
+            <li><a href="">contacto</a></li>
+            
+        </ul>
+        <!-- Redes sociales -->
+        <div class="icon-searc">
+            <a class="iconos-redes" href="https://web.whatsapp.com/"><img class="icon-1" href="" src="img\icom\icons8-whatsapp-50.png" alt=""></a>
+            <a class="iconos-redes" href="https://www.instagram.com/"><img class="icon-2" src="img\icom\icons8-instagram-50.png" alt=""></a>
+            <a class="iconos-redes" href="https://www.facebook.com/"><img class="icon-3" src="img\icom\icons8-facebook-50.png" alt=""> </a>
+        </div>
+    </nav>
+
+    <header>
+
+        <div class="carrusel-container">
+            <!-- Contenedor único para las imágenes -->
+            <div class="carrusel-images">
+                <img src="./img/img_carusel/Diseño sin título (2).webp" alt="Imagen 1" class="carrusel-item">
+                <img src="./img/img_carusel/remera-basica.-carruselwebp" alt="Imagen 3" class="carrusel-item">
+                <img src="./img/img_carusel/Diseño sin título (4).webp" alt="Imagen 2" class="carrusel-item">
+                
+            </div>
+            <!-- Botones de navegación -->
+            <button class="prev  button-carusel" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next  button-carusel" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    
+        
+
+    </header>    
+
+    <main>
+        <section id="productos" class="cards-contaniner">
+            <h2>Productos</h2>
+            <div class="product-grid">
+                <div class="card">
+                    <img src="img\img_cards\DALL.webp" alt="remera1">
+                    <h3>Remera Modelo 1</h3>
+                    <p>Precio: $99.99</p>
+                    <button class="boton-tarjeta" >comprar</button>
+                    
+                </div>
+                <div class="card">
+                    <img src="./img/img_cards/camiseta_basica.webp" alt="remera2">
+                    <h3>Remera Modelo 2</h3>
+                    <p>Precio: $89.99</p>
+                    <button class="boton-tarjeta" >comprar</button>
+
+                    
+                </div>
+                <div class="card">
+                    <img src="img\img_cards\DALL.webp" alt="remera3">
+                    <h3>Remera Modelo 3</h3>
+                    <p>Precio: $79.99</p>
+                    <button class="boton-tarjeta" >comprar</button>
+                    
+                </div> 
+            </div>
+        </section> 
+    
+       
+        
+
+   
+    </main>
+     <!-- Sección de reseñas -->
+    <section class="contenedor-reseñas" id="reseña">
+        <h2>Reseñas</h2>
+        <div class="review">
+            <p>"Excelente calidad y comodidad. Perfectas para los dias con mucho calor!"</p>
+            <span>- Eduardo</span>
+        </div>
+        <div class="review">
+            <p>"El diseño es muy atractivo y se sienten muy bien al usarlas."</p>
+            <span>- Luis</span>
+        </div>
+        <div class="review">
+            <p>"La tela es de alta calidad y es muy comoda."</p>
+            <span>- Rafael</span>
+        </div>
+
+    </section> 
+
+        <!-- Sección de contacto -->
+        <section class="contacto" id="contacto">
+            <h2>Contacto</h2>
+            <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+            </form>
+        </section> 
+
+    <footer>
+        <div class="containe-footer">
+        <!-- Redes sociales -->
+            <div class="icon-searc">
+                <a class="iconos-redes" href="https://web.whatsapp.com/"><img class="icon-1" href="" src="img\icom\icons8-whatsapp-50.png" alt=""></a>
+                <a class="iconos-redes" href="https://www.instagram.com/"><img class="icon-2" src="img\icom\icons8-instagram-50.png" alt=""></a>
+                <a class="iconos-redes" href="https://www.facebook.com/"><img class="icon-3" src="img\icom\icons8-facebook-50.png" alt=""> </a>
+            </div>
+        </div>
+        <p>Realizado por Carlos Lopez</p>
+        <p>Mail: carlospez.28@gmail.com </p>
+
+    </footer>
+
+    <script src="./js/carrusel.js"></script>
+</body>
+</html>
+
+
+
+

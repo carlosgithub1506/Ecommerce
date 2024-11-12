@@ -1,0 +1,102 @@
+.carrusel-container {
+    position: relative;
+    z-index: 1;
+    width: 70vw; 
+    height: 38vh;
+    overflow: hidden; 
+    margin-top: 5%;
+    margin-left: 15%;
+    border-radius: 15px;
+}
+
+
+.carrusel-images {
+    display: flex;
+    z-index: 1;
+    transition: transform 0.5s ease; 
+    width: 310%; 
+    height: 100%;
+}
+
+
+.carrusel-item {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Botones */
+.button-carusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.button-carusel:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carrusel-container {
+        width: 80vw; 
+        height: 35vh; 
+    }
+
+    .button-carusel {
+        font-size: 18px; 
+        padding: 10px;
+    }
+
+    .prev, .next {
+        top: 50%; 
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .carrusel-container {
+        width: 90vw;
+        height: 30vh; 
+    }
+
+    .button-carusel {
+        font-size: 16px; 
+        padding: 8px;
+    }
+
+    .prev, .next {
+        top: 50%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .carrusel-container {
+        width: 100vw; 
+        height: 25vh;
+    }
+
+    .button-carusel {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+
+

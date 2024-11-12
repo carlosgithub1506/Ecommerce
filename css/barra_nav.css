@@ -1,0 +1,311 @@
+.logo-barra {
+    display: flex;
+    height: 100%;
+    width: 10%;
+    color: white;
+    font-size: 27px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    font-weight: 600;
+    margin-top: 0.5%;
+    }
+
+    .logo-camisa{
+
+        margin-top: -3.5%;
+        margin-right: 3%;
+        width: 18%;
+        height: 40%;
+
+    }
+    
+    .logo-barra:hover {
+    transform: scale(1.2);
+    transition: all 0.4s ease-in;
+    }
+    
+    nav .icon-search  {
+    display: flex;
+    width: 15%;
+    height: 23%;
+    margin: right 10px;
+    margin-top: 1%;
+    }
+    
+    nav .bar-bus input {
+    width: 80%;
+    border-radius: 6px;
+    }
+    
+    .menu-horizontal {
+    display: flex;
+    height: 100%;
+    width: 45%;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    }
+    
+    .menu-horizontal > li {
+    display: flex;
+    height: 34%;
+    align-items: center;
+    margin-top: 1.5%;
+    font-size: 13px;
+    width: 25%;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease-in;
+    }
+    
+    .menu-horizontal li:hover {
+    background-color:#2F2F2F;
+    }
+    
+    .menu-horizontal > li > a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    justify-content: center;
+    width: 15%;
+    }
+    
+    .menu-horizontal li:hover {
+    transform: scale(1.1);
+    }
+    
+    /*menu vertical*/
+    
+    .menu-vertical {
+        display: none;
+        position: absolute; 
+        z-index: 10000;
+        border-radius: 6px;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color:#505050;
+        margin-top: 40%;
+        -webkit-box-shadow: 3px 5px 11px 0px rgba(0, 0, 0, 0.63);
+        -moz-box-shadow: 3px 5px 11px 0px rgba(0, 0, 0, 0.63);
+        box-shadow: 3px 5px 11px 0px rgba(0, 0, 0, 0.63);
+        width: 100%;
+        height: 300%;
+        letter-spacing: 1px;
+    }
+    
+    .menu-horizontal li:hover .menu-vertical {
+        display: flex;
+        z-index: 10000;
+
+    }
+    
+    .menu-vertical li:hover {
+        transform: scale(1.2);
+        display: flex;
+        z-index: 10000;
+
+        width: 120%;
+        height: 70%;
+        -webkit-box-shadow: 3px 5px 11px 0px rgba(0, 0, 0, 0.63);
+        -moz-box-shadow: 3px 5px 11px 0px rgba(0, 0, 0, 0.63);
+        box-shadow: 3px 5px 11px 0px rgba(0, 0, 0, 0.63);
+    }
+    
+    .menu-vertical li {
+        display: flex;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        transition: all 0.3s ease-in;
+        margin-right: 5%;
+        position:relative;
+    }
+    
+    .menu-vertical li a {
+        color: white;
+        text-decoration: none;
+        justify-content: center;
+        z-index: 999;
+        
+    }
+
+    .icon-searc{
+        display: flex;
+        margin-top:0.9%;
+        margin-right: 10%;
+        width: 7%;
+        height: 28%;
+        justify-content: space-around;
+        
+    }
+
+    .iconos-redes{
+        display: flex;
+    }
+
+    @media (max-width: 1400px) {
+        nav {
+            justify-content: space-between;
+            padding: 0 10px;
+            height: 15%;
+        }
+    
+        .menu-horizontal {
+            width: 60%;
+        }
+    
+        .menu-horizontal > li {
+        
+            font-size: 13px;
+            width: auto;
+            margin: 0 5px;
+        }
+
+        .iconos-redes>img{
+            height: 40%;
+
+        }
+    
+        .icon-searc {
+            width: 10%;
+            margin-right: 2%;
+            margin-top: 2%;
+            
+        }
+
+        .logo-barra>p{
+            /*display: none;*/
+            font-size: 80%;
+        }
+
+        .logo-camisa{
+            height: 50%;
+            width: 30%;
+        }
+    }
+    
+
+    @media (max-width: 768px) {
+        nav {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+    
+        .logo-barra {
+            width: 100%;
+            margin-top: 2%;
+            font-size: 20px;
+        }
+    
+        .menu-horizontal {
+            width: 80%;
+            margin-top: 2%;
+            justify-content: space-around;
+    
+        }
+    
+        .menu-horizontal > li {
+            width: 100%;
+            margin: 5px 0;
+
+        }
+    
+        .menu-vertical {
+            position: static;
+            width: 100%;
+            height: auto;
+        }
+    
+        .icon-searc {
+            margin-top: 10px;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .logo-barra{
+            width: 90%;
+            height: 5cap;
+            justify-content:center ;
+        }
+
+        .logo-camisa{
+            height: 110%;
+            width: 12%;
+            margin-top: 1%;
+        }
+
+        .logo-barra>p{
+            font-size: 200%;
+        }
+
+        .iconos-redes>img{
+            height: 60%;
+            align-self: center;
+
+
+        }
+    
+        .icon-searc {
+            width: 100%;
+            height:20%;
+            margin-right: 2%;
+            margin-top: 2%;
+
+        }
+
+    }
+
+
+    @media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-barra {
+        margin-bottom: 10px;
+    }
+
+    .menu-horizontal {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-horizontal > li {
+        font-size: 10px;
+    }
+
+    .icon-searc {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+
+    .iconos-redes img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+    
+
+
+
+
+
+    
+    
