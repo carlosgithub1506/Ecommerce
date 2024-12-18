@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T-Shirt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="./img/icom/icons-camiseta.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/barra_nav.css">
@@ -12,6 +14,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/reseñas.css">
     <link rel="stylesheet" href="./css/contacto.css">
+   
 
 </head>
 <body>
@@ -30,15 +33,23 @@
             </li>
 
             <li>
-            <a href="#cards-contaniner">Remeras</a>
+            <a href="#cards-contaniner">Articulos</a>
+            <!--
             <ul class="menu-vertical">
                 <li><a href="#cards-contaniner">Musculosa</a></li>
                 <li><a href="#cards-contaniner">Diseños</a></li>
                 <li><a href="#cards-contaniner">Basica</a></li>
-            </ul>
+            </ul> 
+            -->
             </li>
             <li><a href="">registrarse</a></li>
-            <li><a href="#contacto">contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="carrito.html">
+                <i class="fas fa-shopping-cart"> </i> 
+                </a>
+            </li>
+            
             
         </ul>
         <!-- Redes sociales -->
@@ -69,70 +80,24 @@
     </header>    
 
     <main>
-        <section id="productos" class="cards-contaniner">
-            <h2 class="titulo-producto" >Productos</h2>
-            <div class="product-grid">
-                <div class="card">
-                    <img src="img\img_cards\DALL.webp" alt="remera1">
-                    <h3>Remera Modelo 1</h3>
-                    <p>Precio: $99.99</p>
-                    <button class="boton-tarjeta" >comprar</button>
+        <section>
+         
+          <div class="container my-5">
+                  <div id="productos-container" class="row">
                     
-                </div>
-                <div class="card">
-                    <img src="./img/img_cards/camiseta_basica.webp" alt="remera2">
-                    <h3>Remera Modelo 2</h3>
-                    <p>Precio: $89.99</p>
-                    <button class="boton-tarjeta" >comprar</button>
-
-                    
-                </div>
-                <div class="card">
-                    <img src="img\img_cards\DALL.webp" alt="remera3">
-                    <h3>Remera Modelo 3</h3>
-                    <p>Precio: $79.99</p>
-                    <button class="boton-tarjeta" >comprar</button>
-                    
-                </div> 
-            </div>
-        </section> 
+                  </div>
+                  <!-- Paginacion -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button id="prev-btn" class="btn btn-secondary">Anterior</button>
+                    <span id="page-info"></span>
+                    <button id="next-btn" class="btn btn-secondary">Siguiente</button>
+                 </div>
+          </div>
     
-
+    
+        </section>    
     </main>
-    <!-- Sección de reseñas -->
-    <section class="contenedor-reseñas" id="reseña">
-        <h2>Reseñas</h2>
-        <div class="review">
-            <p>"Excelente calidad y comodidad. Perfectas para los dias con mucho calor!"</p>
-            <span>- Eduardo</span>
-        </div>
-        <div class="review">
-            <p>"El diseño es muy atractivo y se sienten muy bien al usarlas."</p>
-            <span>- Luis</span>
-        </div>
-        <div class="review">
-            <p>"La tela es de alta calidad y es muy comoda."</p>
-            <span>- Rafael</span>
-        </div>
-
-    </section> 
-
-        <!-- Sección de contacto -->
-        <section class="contacto" id="contacto">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/xyzyjpej" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Enviar</button>
-            </form>
-        </section> 
+  
 
     <footer>
         <div class="containe-footer">
@@ -149,6 +114,9 @@
     </footer>
 
     <script src="./js/carrusel.js"></script>
+    <script src="js/funciones_del_index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
 </body>
 </html>
 

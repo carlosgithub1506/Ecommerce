@@ -29,7 +29,16 @@ margin-bottom: 3%;
 
 
 main{
-    background-color: #fff2f0;
-    height: 55vh;
+    
+    display: flex;
+    justify-content: center;
+    height: 70vh;
     width: 100vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
